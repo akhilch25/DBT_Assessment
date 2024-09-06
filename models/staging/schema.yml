@@ -1,0 +1,58 @@
+
+version: 2
+
+models:
+    - name: stg_customers
+      description: "Customer details are present"
+      columns:
+          - name: CUSTOMER_ID
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: stg_employees
+      description: "Employee details are present"
+      columns:
+          - name: EMPLOYEE_ID
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: stg_orders
+      description: "Order details are present"
+      columns:
+          - name: ORDER_ID
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: stg_pricing
+      description: "Pricing details are present"
+      columns:
+          - name: PRICE_ID
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: stg_products
+      description: "Product details are present"
+      columns:
+          - name: PRODUCT_ID
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: stg_stores
+      description: "Store details are present"
+      columns:
+          - name: STORE_ID
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: mart_cust_loyalty
+      description: "Analyze customer behavior and loyalty to improve customer retention, personalize marketing strategies, and maximize customer lifetime value."
+    - name: mart_product_perf
+      description: "Assess product performance across different regions and categories to optimize inventory management, pricing strategies, and product marketing."
+    - name: mart_store_perf
+      description: "The management team wants to monitor the performance of different stores across regions to optimize operations and improve sales strategies. They need a detailed report summarizing key sales metrics, which will help in decision-making related to promotions, staffing, and inventory management."                

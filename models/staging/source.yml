@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: source_data
+    description: Source data
+    database: ASSESSMENT
+    schema: DBO
+    tables:
+      - name: Customers 
+      - name: Employees
+      - name: Orders
+      - name: ORDER_LINE_ITEMS
+      - name: Pricing
+      - name: Products
+      - name: Promotions
+      - name: Returns
+      - name: Stores
+      - name: Suppliers
+
